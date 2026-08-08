@@ -10,11 +10,11 @@
 | Level   | Main Concept                     | Done |
 |:-------:|:--------------------------------:|:----:|
 |  0 → 1  | SSH / Remote Login               |  1   |
-|  1 → 2  | Special Filenames                |  0   |
-|  2 → 3  | Spaces in Filenames              |  0   |
-|  3 → 4  | Hidden Files                     |  0   |
-|  4 → 5  | File Identification              |  0   |
-|  5 → 6  | Finding Files                    |  0   |
+|  1 → 2  | Special Filenames                |  1   |
+|  2 → 3  | Spaces in Filenames              |  1   |
+|  3 → 4  | Hidden Files                     |  1   |
+|  4 → 5  | File Identification              |  1   |
+|  5 → 6  | Finding Files                    |  1   |
 |  6 → 7  | File Properties & Search         |  0   |
 |  7 → 8  | grep / Text Searching            |  0   |
 |  8 → 9  | sort / uniq                      |  0   |
@@ -139,7 +139,7 @@
 `cd ./-file07`
 `ls`
 
-**What I learned:** I learnt `file` cmd and proper use of it.
+**What I learned:** I learn `file` cmd and proper use of it.
 
 **Key takeaway:** use file ./* to display all file types then cd file and then ls to get password.
 
@@ -158,7 +158,7 @@
 
 **What I learned:** I learned use of find command 
 
-**Key takeaway:**use find command to find the needed filr then use cat to get password.
+**Key takeaway:**use find command to find the needed file then use cat to get password.
 
 ---
 
@@ -565,10 +565,3 @@
 **Current focus:** Linux CLI & problem solving
 
 ---
-
-## Security Notes
-
-- Never store passwords or tokens.
-- Never store private keys.
-- Record commands and concepts, not credentials.
-- Write solutions in my own words.
