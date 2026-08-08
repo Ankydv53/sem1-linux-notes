@@ -1,0 +1,30 @@
+ls - To list files and directories in the current working directory.
+cd - To change the current working directory.
+mkdir - To create directories.
+touch - To create new empty files.
+pwd - To print the current working directory.
+rmdir - To remove empty directories.
+rm - To remove files.
+cat - To display the contents of a file.
+echo - To print text or variables to the terminal.
+nano - A simple terminal-based text editor.
+apt - To install, remove, update, and upgrade packages.
+find - To search for files and directories.
+gcc - To compile C programs.
+cp - To copy files and directories from one location to another.
+mv - To move or rename files and directories.
+tac - To display the contents of a file in reverse order.
+grep - To search for specific or matching text in files.
+wc - To count lines, words, characters, and bytes in a file.
+man - To view the manual/help page of a command.
+cal & ncal - To display a calendar.
+date - To display the current date and time.
+sudo - Super user do , to perfrom admin level task.
+clear - TO clear terminal.
+who - Print all users in current group.
+whoami - Print specific user.
+chmod - To change file permissions.
+chown - To change ownership of file.
+head - To display head of text file.
+tail - To display bottom of text file.
+
