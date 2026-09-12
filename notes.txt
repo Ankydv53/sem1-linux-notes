@@ -1,30 +1,378 @@
 ls - To list files and directories in the current working directory.
-cd - To change the current working directory.
-mkdir - To create directories.
-touch - To create new empty files.
-pwd - To print the current working directory.
-rmdir - To remove empty directories.
-rm - To remove files.
-cat - To display the contents of a file.
-echo - To print text or variables to the terminal.
-nano - A simple terminal-based text editor.
-apt - To install, remove, update, and upgrade packages.
-find - To search for files and directories.
-gcc - To compile C programs.
-cp - To copy files and directories from one location to another.
-mv - To move or rename files and directories.
-tac - To display the contents of a file in reverse order.
-grep - To search for specific or matching text in files.
-wc - To count lines, words, characters, and bytes in a file.
-man - To view the manual/help page of a command.
-cal & ncal - To display a calendar.
-date - To display the current date and time.
-sudo - Super user do , to perfrom admin level task.
-clear - TO clear terminal.
-who - Print all users in current group.
-whoami - Print specific user.
-chmod - To change file permissions.
-chown - To change ownership of file.
-head - To display head of text file.
-tail - To display bottom of text file.
+options in ls:-
+ls -l : Display files with their information in long format.
+ls -h : Display file sizes in human readable format.
+ls -d : List directories themselves, not their contents.
+ls -a : Shows all files including hidden files.
+ls -F : Shows file type by adding symbols.
+ls -s : Display the size of each file in blocks.
+ls -S : List files sorted according to their size.
 
+cd - To change the current working directory.
+options in cd:-
+cd - : Switch to the previous working directory.
+cd .. : Move to the parent directory.
+cd ~ : Move to the home directory.
+
+mkdir - To create directories.
+options in mkdir:-
+mkdir -p : Makes parent directories if they are not created.
+mkdir -m : Creates directory with specified permissions.
+
+touch - To create new empty files or update file timestamps.
+options in touch:-
+touch -a : Change only access time.
+touch -m : Change only modification time.
+touch -t : Use specific time instead of current time.
+
+pwd - To print the current working directory.
+options in pwd:-
+pwd -L : Display the logical current working directory.
+pwd -P : Display the physical current working directory.
+
+rmdir - To remove empty directories.
+options in rmdir:-
+rmdir -p : Deletes parent directories also if they are empty.
+rmdir --ignore-fail-on-non-empty : Ignore failures caused by non-empty directories.
+
+rm - To remove files and directories.
+options in rm:-
+rm -f : Forcefully delete files without prompting.
+rm -r : Recursively deletes files and directories.
+rm -i : Ask for confirmation before deleting.
+rm -d : Delete empty directories.
+
+cat - To display the contents of a file.
+options in cat:-
+cat -n : Prints numbers of lines.
+cat -b : Numbers only non-empty lines.
+cat -A : Shows non-printing characters.
+cat -E : Shows the end of each line.
+
+echo - To print text or variables to the terminal.
+options in echo:-
+echo -n : Do not print a newline at the end.
+echo -e : Enable interpretation of escape characters.
+echo -E : Disable interpretation of escape characters.
+
+nano - A simple terminal-based text editor.
+options in nano:-
+nano -l : Display line numbers.
+nano -m : Enable mouse support.
+nano -B : Create a backup file when saving.
+
+apt - To install, remove, update, and upgrade packages.
+options in apt:-
+apt update : Update the package information.
+apt upgrade : Upgrade installed packages.
+apt install : Install a package.
+apt remove : Remove a package.
+apt search : Search for a package.
+apt show : Display package information.
+
+find - To search for files and directories.
+options in find:-
+find -iname : Find files/folders by name without being case sensitive.
+find -name : Find files/folders by name with case sensitivity.
+find -empty : Find empty files and directories.
+find -group : Find files belonging to a specific group.
+find -readable : Find files that are readable.
+find -size : Find files according to their size.
+find -type : Find specific types such as files or directories.
+find -user : Find files belonging to a specific user.
+find -perm : Find files according to their permissions.
+
+gcc - To compile C programs.
+options in gcc:-
+gcc -o : Specify the name of the output file.
+gcc -c : Compile source code without linking.
+gcc -Wall : Enable common warning messages.
+gcc -g : Add debugging information.
+
+cp - To copy files and directories from one location to another.
+options in cp:-
+cp -r : Copy directories and their contents recursively.
+cp -i : Ask for confirmation before overwriting.
+cp -f : Forcefully copy files.
+cp -v : Display what is being copied.
+
+mv - To move or rename files and directories.
+options in mv:-
+mv -i : Ask for confirmation before overwriting.
+mv -f : Forcefully move files.
+mv -v : Display what is being moved.
+
+tac - To display the contents of a file in reverse order.
+options in tac:-
+tac -b : Attach the separator before instead of after.
+tac -s : Use a specific string as the separator.
+tac -r : Treat the separator as a regular expression.
+
+grep - To search for specific or matching text in files.
+options in grep:-
+grep -i : Ignore case while searching.
+grep -n : Display line numbers of matching lines.
+grep -v : Display lines that do not match.
+grep -r : Search recursively in directories.
+grep -w : Match whole words only.
+grep -c : Count matching lines.
+
+wc - To count lines, words, characters, and bytes in a file.
+options in wc:-
+wc -l : Count the number of lines.
+wc -w : Count the number of words.
+wc -c : Count the number of bytes.
+wc -m : Count the number of characters.
+
+man - To view the manual/help page of a command.
+options in man:-
+man -f : Display a short description of a command.
+man -k : Search manual pages by keyword.
+man -a : Display all available manual pages.
+
+cal & ncal - To display a calendar.
+options in cal/ncal:-
+cal -3 : Display previous, current, and next month.
+cal -y : Display the calendar for the entire year.
+cal -m : Display the calendar with Monday as the first day.
+
+date - To display the current date and time.
+options in date:-
+date -u : Display date and time in UTC.
+date -d : Display a date according to the given date string.
+date +%D : Display date in MM/DD/YY format.
+date +%T : Display time in HH:MM:SS format.
+
+sudo - To perform commands with superuser/administrator privileges.
+options in sudo:-
+sudo -u : Run command as a specified user.
+sudo -i : Start an interactive login shell as root.
+sudo -l : List the commands the current user can run with sudo.
+
+clear - To clear the terminal screen.
+options in clear:-
+clear -x : Clear the terminal screen without clearing the scrollback buffer.
+
+who - To display users currently logged into the system.
+options in who:-
+who -H : Display column headings.
+who -q : Display logged-in users and their number.
+who -b : Display the last system boot time.
+
+whoami - To display the username of the current user.
+options in whoami:-
+whoami --help : Display help information.
+whoami --version : Display version information.
+
+chmod - To change file permissions.
+options in chmod:-
+chmod -R : Change permissions recursively.
+chmod -v : Display a diagnostic for every file processed.
+chmod -c : Report only when a change is made.
+
+chown - To change ownership of a file or directory.
+options in chown:-
+chown -R : Change ownership recursively.
+chown -v : Display a diagnostic for every file processed.
+chown -c : Report only when a change is made.
+
+head - To display the beginning of a text file.
+options in head:-
+head -n : Display the specified number of lines from the beginning.
+head -c : Display the specified number of bytes.
+head -q : Do not display file headers.
+
+tail - To display the end of a text file.
+options in tail:-
+tail -n : Display the specified number of lines from the end.
+tail -c : Display the specified number of bytes.
+tail -f : Continuously display new data added to the file.
+tail -q : Do not display file headers.
+
+du - To display the disk space used by files and directories.
+options in du:-
+du -h : Display disk usage in human readable format.
+du -s : Display only the total disk usage.
+du -a : Display disk usage of all files and directories.
+
+df - To display available and used disk space of file systems.
+options in df:-
+df -h : Display disk space in human readable format.
+df -T : Display file system type.
+
+free - To display used and available memory.
+options in free:-
+free -h : Display memory in human readable format.
+free -m : Display memory in megabytes.
+
+ps - To display information about running processes.
+options in ps:-
+ps -e : Display all running processes.
+ps -f : Display processes in full format.
+ps -u : Display processes of a specific user.
+
+top - To display real-time information about running processes.
+options in top:-
+top -b : Run top in batch mode.
+top -n : Specify the number of updates.
+top -u : Display processes of a specific user.
+
+kill - To terminate a running process.
+options in kill:-
+kill -l : List available signals.
+kill -9 : Forcefully terminate a process.
+kill -15 : Terminate a process gracefully.
+
+uname - To display system information.
+options in uname:-
+uname -a : Display all system information.
+uname -r : Display the kernel release.
+uname -m : Display the machine hardware name.
+
+hostname - To display the system hostname.
+options in hostname:-
+hostname -I : Display the IP addresses of the system.
+hostname -s : Display the short hostname.
+
+ip - To display and manage network information.
+options in ip:-
+ip addr : Display IP addresses and network interfaces.
+ip link : Display network interfaces.
+ip route : Display the routing table.
+
+ping - To test network connectivity between systems.
+options in ping:-
+ping -c : Send a specified number of packets.
+ping -i : Set the interval between packets.
+ping -4 : Use IPv4.
+
+passwd - To change a user's password.
+options in passwd:-
+passwd -l : Lock a user's password.
+passwd -u : Unlock a user's password.
+passwd -d : Delete a user's password.
+
+id - To display user and group information.
+options in id:-
+id -u : Display the user ID.
+id -g : Display the group ID.
+id -G : Display all group IDs.
+
+groups - To display the groups a user belongs to.
+options in groups:-
+groups username : Display the groups of a specific user.
+
+systemctl - To manage systemd services.
+options in systemctl:-
+systemctl start : Start a service.
+systemctl stop : Stop a service.
+systemctl restart : Restart a service.
+systemctl status : Display the status of a service.
+systemctl enable : Enable a service at boot.
+systemctl disable : Disable a service at boot.
+
+less - To view the contents of a file one screen at a time.
+options in less:-
+less -N : Display line numbers.
+less -S : Do not wrap long lines.
+
+more - To display file contents one screen at a time.
+options in more:-
+more -d : Display help information.
+more -s : Squeeze multiple blank lines into one.
+
+sort - To sort lines of text.
+options in sort:-
+sort -r : Sort in reverse order.
+sort -n : Sort numbers numerically.
+sort -u : Remove duplicate lines.
+sort -f : Ignore case while sorting.
+
+file - To determine and display the type of a file.
+options in file:-
+file -b : Display file type without displaying the filename.
+file -i : Display the MIME type of the file.
+
+history - To display previously executed commands.
+options in history:-
+history -c : Clear the command history.
+history -d : Delete a specific history entry.
+history -w : Save the current history to the history file.
+history -w : Save the current history to the history file.
+
+ss - To display network socket and connection information.
+options in ss:-
+ss -t : Display TCP connections.
+ss -u : Display UDP connections.
+ss -l : Display listening sockets.
+ss -n : Display addresses and port numbers without resolving names.
+
+nslookup - To query DNS and obtain domain or IP address information.
+options in nslookup:-
+nslookup domain : Find the IP address of a domain.
+nslookup IP : Find the domain name associated with an IP address.
+nslookup -type= : Query a specific DNS record type.
+
+dig - To perform DNS queries and display DNS information.
+options in dig:-
+dig domain : Display DNS information of a domain.
+dig +short : Display a short DNS answer.
+dig -x : Perform a reverse DNS lookup.
+
+traceroute - To display the path taken by packets to reach a destination.
+options in traceroute:-
+traceroute -4 : Use IPv4.
+traceroute -6 : Use IPv6.
+traceroute -n : Do not resolve IP addresses to hostnames.
+
+ifconfig - To display or configure network interfaces.
+options in ifconfig:-
+ifconfig -a : Display all network interfaces.
+ifconfig interface : Display information about a specific interface.
+ifconfig interface up : Enable a network interface.
+ifconfig interface down : Disable a network interface.
+
+route - To display or modify the IP routing table.
+options in route:-
+route -n : Display the routing table without resolving hostnames.
+route -v : Display detailed routing information.
+
+netstat - To display network connections, routing tables, and network statistics.
+options in netstat:-
+netstat -a : Display all connections and listening ports.
+netstat -t : Display TCP connections.
+netstat -u : Display UDP connections.
+netstat -r : Display the routing table.
+netstat -i : Display network interface statistics.
+
+cron - To schedule and automate tasks to run at specific times or intervals.
+
+crontab - To create, view, edit, and remove scheduled cron jobs.
+options in crontab:-
+crontab -e : Edit the current user's cron jobs.
+crontab -l : List the current user's cron jobs.
+crontab -r : Remove all cron jobs of the current user.
+crontab -u : Specify a particular user.
+
+cron job format:-
+* * * * * command
+| | | | |
+| | | | +--- Day of week (0-7)
+| | | +----- Month (1-12)
+| | +------- Day of month (1-31)
+| +--------- Hour (0-23)
++----------- Minute (0-59)
+
+examples:-
+* * * * * command : Run the command every minute.
+0 * * * * command : Run the command every hour.
+0 9 * * * command : Run the command every day at 9:00 AM.
+0 0 * * 0 command : Run the command every Sunday at midnight.
+
+systemctl - To manage the cron service.
+commands in systemctl:-
+systemctl status cron : Display the status of the cron service.
+systemctl start cron : Start the cron service.
+systemctl stop cron : Stop the cron service.
+systemctl restart cron : Restart the cron service.
+systemctl enable cron : Enable the cron service at system startup.
